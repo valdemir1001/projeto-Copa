@@ -32,7 +32,7 @@ class Application():
         self.frame_3_main.place(relx=0.59,rely=0.22,relwidth=0.40,relheight=0.77)
 
         # Imagem da Label do Título
-        self.lb_titulo = PIL.Image.open('img_geral/stadio.jpg')
+        self.lb_titulo = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_geral/stadio.jpg')
         self.lb_titulo = self.lb_titulo.resize((1200, 200))
         self.lb_titulo = ImageTk.PhotoImage(self.lb_titulo)
 
@@ -55,7 +55,7 @@ class Application():
         self.entry_ano.place(relx=0.15,rely=0.08,relwidth=0.40,relheight=0.03)
 
     # Imagens e Botão Busca
-        self.app_bt_busca = PIL.Image.open('img_geral/bola_paises.png')
+        self.app_bt_busca = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_geral/bola_paises.png')
         self.app_bt_busca = self.app_bt_busca.resize((45, 45))
         self.app_bt_busca = ImageTk.PhotoImage(self.app_bt_busca)
 
@@ -66,7 +66,7 @@ class Application():
 
 
     # 1930 - URUGUAI
-        self.img_botao1930 = PIL.Image.open('img_poster/1930_Uruguai.jpg')
+        self.img_botao1930 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1930_Uruguai.jpg')
         self.img_botao1930 = self.img_botao1930.resize((72, 89))
         self.img_botao1930 = ImageTk.PhotoImage(self.img_botao1930)
 
@@ -77,7 +77,7 @@ class Application():
 
 
     # 1934 - ITÁLIA
-        self.img_botao1934 = PIL.Image.open('img_poster/1934_italia.jpg')
+        self.img_botao1934 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1934_italia.jpg')
         self.img_botao1934 = self.img_botao1934.resize((72, 89))
         self.img_botao1934 = ImageTk.PhotoImage(self.img_botao1934)
 
@@ -87,7 +87,7 @@ class Application():
         self.botao_img1934.place(relx=0.16, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1938 - FRANÇA
-        self.img_botao1938 = PIL.Image.open('img_poster/1938_franca.jpg')
+        self.img_botao1938 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1938_franca.jpg')
         self.img_botao1938 = self.img_botao1938.resize((72, 89))
         self.img_botao1938 = ImageTk.PhotoImage(self.img_botao1938)
 
@@ -97,7 +97,7 @@ class Application():
         self.botao_img1938.place(relx=0.30, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1950 - BRASIL
-        self.img_botao1950 = PIL.Image.open('img_poster/1950_brasil.jpg')
+        self.img_botao1950 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1950_brasil.jpg')
         self.img_botao1950 = self.img_botao1950.resize((72, 89))
         self.img_botao1950 = ImageTk.PhotoImage(self.img_botao1950)
 
@@ -107,7 +107,7 @@ class Application():
         self.botao_img1950.place(relx=0.44, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1954 - SUIÇA
-        self.img_botao1954 = PIL.Image.open('img_poster/1954_suica.jpg')
+        self.img_botao1954 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1954_suica.jpg')
         self.img_botao1954 = self.img_botao1954.resize((72, 89))
         self.img_botao1954 = ImageTk.PhotoImage(self.img_botao1954)
 
@@ -117,7 +117,7 @@ class Application():
         self.botao_img1954.place(relx=0.58, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1958 - SUÉCIA
-        self.img_botao1958 = PIL.Image.open('img_poster/1958_suecia.jpg')
+        self.img_botao1958 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1958_suecia.jpg')
         self.img_botao1958 = self.img_botao1958.resize((72, 89))
         self.img_botao1958 = ImageTk.PhotoImage(self.img_botao1958)
 
@@ -127,7 +127,7 @@ class Application():
         self.botao_img1958.place(relx=0.72, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1962 - CHILE
-        self.img_botao1962 = PIL.Image.open('img_poster/1962_chile.jpg')
+        self.img_botao1962 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1962_chile.jpg')
         self.img_botao1962 = self.img_botao1962.resize((72, 89))
         self.img_botao1962 = ImageTk.PhotoImage(self.img_botao1962)
 
@@ -137,7 +137,7 @@ class Application():
         self.botao_img1962.place(relx=0.86, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1966 - INGLATERRA
-        self.img_botao1966 = PIL.Image.open('img_poster/1962_chile.jpg')
+        self.img_botao1966 = PIL.Image.open('C:/Users/val/Documents/GitHub/projeto-Copa/Projeto_COPA/img_poster/1962_chile.jpg')
         self.img_botao1966 = self.img_botao1966.resize((72, 89))
         self.img_botao1966 = ImageTk.PhotoImage(self.img_botao1966)
 
