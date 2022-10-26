@@ -57,94 +57,103 @@ class Application(Imagens):
         self.entry_ano = ttk.Combobox(self.frame_2_main,font=('verdana 12 bold'))
         self.entry_ano.place(relx=0.15,rely=0.08,relwidth=0.40,relheight=0.03)
 
-    # Imagens e Botão Busca
-        self.app_bt_busca = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_geral/bola_paises.png')
-        self.app_bt_busca = self.app_bt_busca.resize((45, 45))
-        self.app_bt_busca = ImageTk.PhotoImage(self.app_bt_busca)
+
+        self.bola = base64.b64decode(self.bola_pais_B64)
+        self.bt_bola_pais = PIL.Image.open(io.BytesIO(self.bola))
+        self.bt_bola_pais = self.bt_bola_pais.resize((45, 45))
+        self.bt_bola_pais = ImageTk.PhotoImage(self.bt_bola_pais)
 
         self.botao_ano = Button(self.frame_2_main,
-                            image=self.app_bt_busca,text='pesquisar'.upper(),font=('verdana 10 bold'),
+                            image=self.bt_bola_pais,text='pesquisar'.upper(),font=('verdana 10 bold'),
                             width=900,compound=TOP,relief=RAISED,anchor=NW)
         self.botao_ano.place(relx=0.60,rely=0.02,relwidth=0.14,relheight=0.10)
 
 
     # 1930 - URUGUAI
-        self.img_botao1930 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1930_Uruguai.jpg')
-        self.img_botao1930 = self.img_botao1930.resize((72, 89))
-        self.img_botao1930 = ImageTk.PhotoImage(self.img_botao1930)
+        self.uruguai_30 = base64.b64decode(self.uruguai_1930)
+        self.bt_1930 = PIL.Image.open(io.BytesIO(self.uruguai_30))
+        self.bt_1930 = self.bt_1930.resize((72, 89))
+        self.bt_1930 = ImageTk.PhotoImage(self.bt_1930)
 
-        self.botao_img1930 = Button(self.frame_2_main, image=self.img_botao1930,
+        self.botao_img1930 = Button(self.frame_2_main, image=self.bt_1930,
                                     text=' 1930'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1930.place(relx=0.02, rely=0.20, relwidth=0.12, relheight=0.15)
 
 
     # 1934 - ITÁLIA
-        self.img_botao1934 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1934_italia.jpg')
-        self.img_botao1934 = self.img_botao1934.resize((72, 89))
-        self.img_botao1934 = ImageTk.PhotoImage(self.img_botao1934)
+        self.italia_34 = base64.b64decode(self.italia_1934)
+        self.bt_1934 = PIL.Image.open(io.BytesIO(self.italia_34))
+        self.bt_1934 = self.bt_1934.resize((72, 89))
+        self.bt_1934 = ImageTk.PhotoImage(self.bt_1934)
 
-        self.botao_img1934 = Button(self.frame_2_main, image=self.img_botao1934,
+        self.botao_img1934 = Button(self.frame_2_main, image=self.bt_1934,
                                     text=' 1934'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1934.place(relx=0.16, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1938 - FRANÇA
-        self.img_botao1938 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1938_franca.jpg')
-        self.img_botao1938 = self.img_botao1938.resize((72, 89))
-        self.img_botao1938 = ImageTk.PhotoImage(self.img_botao1938)
+        self.franca_38 = base64.b64decode(self.franca_1938)
+        self.bt_1938 = PIL.Image.open(io.BytesIO(self.franca_38))
+        self.bt_1938 = self.bt_1938.resize((72, 89))
+        self.bt_1938 = ImageTk.PhotoImage(self.bt_1938)
 
-        self.botao_img1938 = Button(self.frame_2_main, image=self.img_botao1938,
+        self.botao_img1938 = Button(self.frame_2_main, image=self.bt_1938,
                                     text=' 1938'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1938.place(relx=0.30, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1950 - BRASIL
-        self.img_botao1950 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1950_brasil.jpg')
-        self.img_botao1950 = self.img_botao1950.resize((72, 89))
-        self.img_botao1950 = ImageTk.PhotoImage(self.img_botao1950)
+        self.brasil_50 = base64.b64decode(self.brasil_1950)
+        self.bt_1950 = PIL.Image.open(io.BytesIO(self.brasil_50))
+        self.bt_1950 = self.bt_1950.resize((72, 89))
+        self.bt_1950 = ImageTk.PhotoImage(self.bt_1950)
 
-        self.botao_img1950 = Button(self.frame_2_main, image=self.img_botao1950,
+        self.botao_img1950 = Button(self.frame_2_main, image=self.bt_1950,
                                     text=' 1950'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1950.place(relx=0.44, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1954 - SUIÇA
-        self.img_botao1954 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1954_suica.jpg')
-        self.img_botao1954 = self.img_botao1954.resize((72, 89))
-        self.img_botao1954 = ImageTk.PhotoImage(self.img_botao1954)
+        self.suica_54 = base64.b64decode(self.suica_1954)
+        self.bt_1954 = PIL.Image.open(io.BytesIO(self.suica_54))
+        self.bt_1954 = self.bt_1954.resize((72, 89))
+        self.bt_1954 = ImageTk.PhotoImage(self.bt_1954)
 
-        self.botao_img1954 = Button(self.frame_2_main, image=self.img_botao1954,
+        self.botao_img1954 = Button(self.frame_2_main, image=self.bt_1954,
                                     text=' 1954'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1954.place(relx=0.58, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1958 - SUÉCIA
-        self.img_botao1958 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1958_suecia.jpg')
-        self.img_botao1958 = self.img_botao1958.resize((72, 89))
-        self.img_botao1958 = ImageTk.PhotoImage(self.img_botao1958)
+        self.suecia_58 = base64.b64decode(self.suecia_1958)
+        self.bt_1958 = PIL.Image.open(io.BytesIO(self.suecia_58))
+        self.bt_1958 = self.bt_1958.resize((72, 89))
+        self.bt_1958 = ImageTk.PhotoImage(self.bt_1958)
 
-        self.botao_img1958 = Button(self.frame_2_main, image=self.img_botao1958,
+        self.botao_img1958 = Button(self.frame_2_main, image=self.bt_1958,
                                     text=' 1958'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1958.place(relx=0.72, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1962 - CHILE
-        self.img_botao1962 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1962_chile.jpg')
-        self.img_botao1962 = self.img_botao1962.resize((72, 89))
-        self.img_botao1962 = ImageTk.PhotoImage(self.img_botao1962)
+        self.chile_62 = base64.b64decode(self.chile_1962)
+        self.bt_1962 = PIL.Image.open(io.BytesIO(self.chile_62))
+        self.bt_1962 = self.bt_1962.resize((72, 89))
+        self.bt_1962 = ImageTk.PhotoImage(self.bt_1962)
 
-        self.botao_img1962 = Button(self.frame_2_main, image=self.img_botao1962,
+        self.botao_img1962 = Button(self.frame_2_main, image=self.bt_1962,
                                     text=' 1962'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1962.place(relx=0.86, rely=0.20, relwidth=0.12, relheight=0.15)
 
     # 1966 - INGLATERRA
-        self.img_botao1966 = PIL.Image.open('C:\meu_pc\projeto-Copa\Projeto_COPA/img_poster/1962_chile.jpg')
-        self.img_botao1966 = self.img_botao1966.resize((72, 89))
-        self.img_botao1966 = ImageTk.PhotoImage(self.img_botao1966)
+        self.inglaterra_66 = base64.b64decode(self.inglaterra_1966)
+        self.bt_1966 = PIL.Image.open(io.BytesIO(self.inglaterra_66))
+        self.bt_1966 = self.bt_1966.resize((72, 89))
+        self.bt_1966 = ImageTk.PhotoImage(self.bt_1966)
 
-        self.botao_img1966 = Button(self.frame_2_main, image=self.img_botao1966,
+        self.botao_img1966 = Button(self.frame_2_main, image=self.bt_1966,
                                     text=' 1966'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1966.place(relx=0.02, rely=0.37, relwidth=0.12, relheight=0.15)
