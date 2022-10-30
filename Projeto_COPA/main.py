@@ -1,4 +1,5 @@
 
+from email.mime import image
 from tkinter import ttk
 from PIL import Image,ImageTk
 import PIL  #pillow
@@ -26,8 +27,9 @@ class Application(Imagens):
     def frames_main(self):
         self.frame_1_main = Frame(self.root)
         self.frame_1_main.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.20)
-
-        self.frame_2_main = Frame(self.root,bg='blue')
+        
+        
+        self.frame_2_main = Frame(self.root,bg='lightgreen')
         self.frame_2_main.place(relx=0.01,rely=0.22,relwidth=0.57,relheight=0.77)
 
         self.frame_3_main = Frame(self.root,bg='green')
@@ -201,10 +203,127 @@ class Application(Imagens):
         self.bt_1982 = self.bt_1982.resize((72, 89))
         self.bt_1982 = ImageTk.PhotoImage(self.bt_1982)
 
-        self.botao_img1970 = Button(self.frame_2_main, image=self.bt_1982,
+        self.botao_img1982 = Button(self.frame_2_main, image=self.bt_1982,
                                     text=' 1982'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
-        self.botao_img1970.place(relx=0.58, rely=0.37, relwidth=0.12, relheight=0.15)  
+        self.botao_img1982.place(relx=0.58, rely=0.37, relwidth=0.12, relheight=0.15)  
+        
+        
+    # 1986 - MÉXICO
+        self.mexico_1986 = base64.b64decode(self.mexico_1986)
+        self.bt_1986 = PIL.Image.open(io.BytesIO(self.mexico_1986))
+        self.bt_1986 = self.bt_1986.resize((72, 89))
+        self.bt_1986 = ImageTk.PhotoImage(self.bt_1986)
 
+        self.botao_img1986 = Button(self.frame_2_main, image=self.bt_1986,
+                                    text=' 1986'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1986.place(relx=0.72, rely=0.37, relwidth=0.12, relheight=0.15)  
+        
+        
+    # 1990 - ITÁLIA
+        self.italia_1990 = base64.b64decode(self.italia_1990)
+        self.bt_1990 = PIL.Image.open(io.BytesIO(self.italia_1990))
+        self.bt_1990 = self.bt_1990.resize((72, 89))
+        self.bt_1990 = ImageTk.PhotoImage(self.bt_1990)
+
+        self.botao_img1990 = Button(self.frame_2_main, image=self.bt_1990,
+                                    text=' 1990'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1990.place(relx=0.86, rely=0.37, relwidth=0.12, relheight=0.15) 
+        
+        
+    # 1994 - ESTADOS UNIDOS
+        self.usa_1994 = base64.b64decode(self.usa_1994)
+        self.bt_1994 = PIL.Image.open(io.BytesIO(self.usa_1994))
+        self.bt_1994 = self.bt_1994.resize((72, 89))
+        self.bt_1994 = ImageTk.PhotoImage(self.bt_1994)
+
+        self.botao_img1994 = Button(self.frame_2_main, image=self.bt_1994,
+                                    text=' 1994'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1994.place(relx=0.02, rely=0.54, relwidth=0.12, relheight=0.15) 
+        
+        
+    # 1998 - FRANÇA
+        self.franca_1998 = base64.b64decode(self.franca_1998)
+        self.bt_1998 = PIL.Image.open(io.BytesIO(self.franca_1998))
+        self.bt_1998 = self.bt_1998.resize((72, 89))
+        self.bt_1998 = ImageTk.PhotoImage(self.bt_1998)
+
+        self.botao_img1998 = Button(self.frame_2_main, image=self.bt_1998,
+                                    text=' 1998'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1998.place(relx=0.16, rely=0.54, relwidth=0.12, relheight=0.15) 
+
+
+    # 2002 - COREIA - JAPÃO
+        self.coreia_japao_2002 = base64.b64decode(self.coreia_japao_2002)
+        self.bt_2002 = PIL.Image.open(io.BytesIO(self.coreia_japao_2002))
+        self.bt_2002 = self.bt_2002.resize((72, 89))
+        self.bt_2002 = ImageTk.PhotoImage(self.bt_2002)
+
+        self.botao_img2002 = Button(self.frame_2_main, image=self.bt_2002,
+                                    text=' 2002'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img2002.place(relx=0.30, rely=0.54, relwidth=0.12, relheight=0.15) 
+        
+        
+    # 2006 - ALEMANHA
+        self.alemanha_2006 = base64.b64decode(self.alemanha_2006)
+        self.bt_2006 = PIL.Image.open(io.BytesIO(self.alemanha_2006))
+        self.bt_2006 = self.bt_2006.resize((72, 89))
+        self.bt_2006 = ImageTk.PhotoImage(self.bt_2006)
+
+        self.botao_img2006 = Button(self.frame_2_main, image=self.bt_2006,
+                                    text=' 2006'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img2006.place(relx=0.44, rely=0.54, relwidth=0.12, relheight=0.15) 
+        
+        
+    # 2010 - AFRICA DO SUL
+        self.africa_sul_2010 = base64.b64decode(self.africa_sul_2010)
+        self.bt_2010 = PIL.Image.open(io.BytesIO(self.africa_sul_2010))
+        self.bt_2010 = self.bt_2010.resize((72, 89))
+        self.bt_2010 = ImageTk.PhotoImage(self.bt_2010)
+
+        self.botao_img2010 = Button(self.frame_2_main, image=self.bt_2010,
+                                    text=' 2010'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img2010.place(relx=0.58, rely=0.54, relwidth=0.12, relheight=0.15) 
+
+    # 2014 - BRASIL
+        self.brasil_2014 = base64.b64decode(self.brasil_2014)
+        self.bt_2014 = PIL.Image.open(io.BytesIO(self.brasil_2014))
+        self.bt_2014 = self.bt_2014.resize((72, 89))
+        self.bt_2014 = ImageTk.PhotoImage(self.bt_2014)
+
+        self.botao_img2014 = Button(self.frame_2_main, image=self.bt_2014,
+                                    text=' 2014'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img2014.place(relx=0.72, rely=0.54, relwidth=0.12, relheight=0.15) 
+        
+    
+    # 2018 - RUSSIA
+        self.russia_2018 = base64.b64decode(self.russia_2018)
+        self.bt_2018 = PIL.Image.open(io.BytesIO(self.russia_2018))
+        self.bt_2018 = self.bt_2018.resize((72, 89))
+        self.bt_2018 = ImageTk.PhotoImage(self.bt_2018)
+
+        self.botao_img2018 = Button(self.frame_2_main, image=self.bt_2018,
+                                    text=' 2018'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img2018.place(relx=0.86, rely=0.54, relwidth=0.12, relheight=0.15)
+        
+    # 2022 - QATAR
+        self.qatar_2022 = base64.b64decode(self.qatar_2022)
+        self.bt_2022 = PIL.Image.open(io.BytesIO(self.qatar_2022))
+        self.bt_2022 = self.bt_2022.resize((72, 89))
+        self.bt_2022 = ImageTk.PhotoImage(self.bt_2022)
+
+        self.botao_img2022 = Button(self.frame_2_main, image=self.bt_2022,
+                                    text=' 2022'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img2022.place(relx=0.02, rely=0.71, relwidth=0.12, relheight=0.15)
 
 Application()
