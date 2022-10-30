@@ -159,5 +159,52 @@ class Application(Imagens):
         self.botao_img1966.place(relx=0.02, rely=0.37, relwidth=0.12, relheight=0.15)
 
 
+    # 1970 - MÈXICO
+        self.mexico_70 = base64.b64decode(self.mexico_1970)
+        self.bt_1970 = PIL.Image.open(io.BytesIO(self.mexico_70))
+        self.bt_1970 = self.bt_1970.resize((72, 89))
+        self.bt_1970 = ImageTk.PhotoImage(self.bt_1970)
+
+        self.botao_img1970 = Button(self.frame_2_main, image=self.bt_1970,
+                                    text=' 1970'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1970.place(relx=0.16, rely=0.37, relwidth=0.12, relheight=0.15)
+
+
+    # 1974 - ALEMANHA OCIDENTAL
+        self.alemanha_O_1974 = base64.b64decode(self.alemanha_O_1974)
+        self.bt_1974 = PIL.Image.open(io.BytesIO(self.alemanha_O_1974))
+        self.bt_1974 = self.bt_1974.resize((72, 89))
+        self.bt_1974 = ImageTk.PhotoImage(self.bt_1974)
+
+        self.botao_img1970 = Button(self.frame_2_main, image=self.bt_1974,
+                                    text=' 1974'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1970.place(relx=0.30, rely=0.37, relwidth=0.12, relheight=0.15)
+        
+        
+    # 1978 - ARGENTINA
+        self.argentina_1978 = base64.b64decode(self.argentina_1978)
+        self.bt_1978 = PIL.Image.open(io.BytesIO(self.argentina_1978))
+        self.bt_1978 = self.bt_1978.resize((72, 89))
+        self.bt_1978 = ImageTk.PhotoImage(self.bt_1978)
+
+        self.botao_img1970 = Button(self.frame_2_main, image=self.bt_1978,
+                                    text=' 1978'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1970.place(relx=0.44, rely=0.37, relwidth=0.12, relheight=0.15)   
+
+
+    # 1982 - ESPANHA
+        self.espanha_1982 = base64.b64decode(self.espanha_1982)
+        self.bt_1982 = PIL.Image.open(io.BytesIO(self.espanha_1982))
+        self.bt_1982 = self.bt_1982.resize((72, 89))
+        self.bt_1982 = ImageTk.PhotoImage(self.bt_1982)
+
+        self.botao_img1970 = Button(self.frame_2_main, image=self.bt_1982,
+                                    text=' 1982'.upper(), font=('verdana 10 bold'),
+                                    width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
+        self.botao_img1970.place(relx=0.58, rely=0.37, relwidth=0.12, relheight=0.15)  
+
 
 Application()
