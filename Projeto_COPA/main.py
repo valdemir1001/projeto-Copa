@@ -69,6 +69,16 @@ class Application(Imagens):
                             image=self.bt_bola_pais,text='pesquisar'.upper(),font=('verdana 10 bold'),
                             width=900,compound=TOP,relief=RAISED,anchor=NW)
         self.botao_ano.place(relx=0.60,rely=0.02,relwidth=0.14,relheight=0.10)
+        
+    # TAÇA    
+        self.taca_dividida = base64.b64decode(self.taca_dividida)
+        self.bt_taca_dividida = PIL.Image.open(io.BytesIO(self.taca_dividida))
+        self.bt_taca_dividida = self.bt_taca_dividida.resize((45, 45))
+        self.bt_taca_dividida = ImageTk.PhotoImage(self.bt_taca_dividida)
+
+        self.taca = Label(self.frame_3_main,
+                            image=self.taca_dividida,)
+        self.taca.place(relx=0.60,rely=0.02,relwidth=0.14,relheight=0.10)
 
 
     # 1930 - URUGUAI
