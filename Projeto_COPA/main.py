@@ -1,4 +1,5 @@
 
+from cgitb import text
 from email.mime import image
 from tkinter import ttk
 from PIL import Image,ImageTk
@@ -7,16 +8,19 @@ import io
 import base64
 from tkinter import *
 from img_B64 import *
+from buscas import *
 
 root = Tk()
 
-class Application(Imagens):
+class Application(Imagens,Listas):
     def __init__(self,master=None):
         self.root = root
         self.img_64()
         self.tela()
+        self.busca()
         self.frames_main()
         self.widgats_principal()
+        
     
         root.mainloop()
 
@@ -56,7 +60,8 @@ class Application(Imagens):
         self.label_ano = Label(self.frame_2_main,text='ano'.upper(),font=('verdana 12 bold'),bg='lightblue')
         self.label_ano.place(relx=0.01,rely=0.08,relwidth=0.10,relheight=0.03)
 
-        self.entry_ano = ttk.Combobox(self.frame_2_main,font=('verdana 12 bold'))
+        self.entry_ano = ttk.Combobox(self.frame_2_main,font=('verdana 12 bold'),values=self.ano_pais)
+        self.entry_ano.set('Busque Aqui')
         self.entry_ano.place(relx=0.15,rely=0.08,relwidth=0.40,relheight=0.03)
 
 
@@ -70,6 +75,20 @@ class Application(Imagens):
                             width=900,compound=TOP,relief=RAISED,anchor=NW)
         self.botao_ano.place(relx=0.60,rely=0.02,relwidth=0.14,relheight=0.10)
         
+    # LABEL TAÇA
+        self.label_taca = Label(self.frame_3_main, text=' " A TAÇA do mundo é Nossa, \ncom o brasileiro não há quem possa..."\n\n Essa foi uma das canções \nque ecoavam duranta as copas \n que se seguiram ao longo dos anos...'.upper(), font=('verdana 12 bold'), bg='lightblue')
+        self.label_taca.place(relx=0.01, rely=0.64, relwidth=0.98, relheight=0.35)
+        
+    # TAÇA
+        self.taca= base64.b64decode(self.taca_dividida)
+        self.bt_taca_dividida = PIL.Image.open(io.BytesIO(self.taca))
+        self.bt_taca_dividida = self.bt_taca_dividida.resize((450, 450))
+        self.bt_taca_dividida= ImageTk.PhotoImage(self.bt_taca_dividida)
+
+        self.botao_ano = Button(self.frame_3_main,
+                            image=self.bt_taca_dividida,text='taças'.upper(),font=('verdana 10 bold'),
+                            width=900,compound=TOP,relief=RAISED,anchor=NW)
+        self.botao_ano.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.62)
    
 
     # 1930 - URUGUAI
