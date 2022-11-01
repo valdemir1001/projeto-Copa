@@ -21,7 +21,6 @@ class Application(Imagens,Listas):
         self.frames_main()
         self.widgats_principal()
         
-    
         root.mainloop()
 
     def tela(self):
@@ -32,14 +31,13 @@ class Application(Imagens,Listas):
         self.frame_1_main = Frame(self.root)
         self.frame_1_main.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.20)
         
-        
         self.frame_2_main = Frame(self.root,bg='lightgreen')
         self.frame_2_main.place(relx=0.01,rely=0.22,relwidth=0.57,relheight=0.77)
 
         self.frame_3_main = Frame(self.root,bg='green')
         self.frame_3_main.place(relx=0.59,rely=0.22,relwidth=0.40,relheight=0.77)
 
-        # Imagem da Label do Título
+    # Imagem da Label do Título
         self.stadio = base64.b64decode(self.stadio_B64)
         self.lb_titulo = PIL.Image.open(io.BytesIO(self.stadio))
         self.lb_titulo = self.lb_titulo.resize((1200, 200))
@@ -64,7 +62,6 @@ class Application(Imagens,Listas):
         self.entry_ano.set('Busque Aqui')
         self.entry_ano.place(relx=0.15,rely=0.08,relwidth=0.40,relheight=0.03)
 
-
         self.bola = base64.b64decode(self.bola_pais_B64)
         self.bt_bola_pais = PIL.Image.open(io.BytesIO(self.bola))
         self.bt_bola_pais = self.bt_bola_pais.resize((45, 45))
@@ -76,7 +73,7 @@ class Application(Imagens,Listas):
         self.botao_ano.place(relx=0.60,rely=0.02,relwidth=0.14,relheight=0.10)
         
     # LABEL TAÇA
-        self.label_taca = Label(self.frame_3_main, text=' " A TAÇA do mundo é Nossa, \ncom o brasileiro não há quem possa..."\n\n Essa foi uma das canções \nque ecoavam duranta as copas \n que se seguiram ao longo dos anos...'.upper(), font=('verdana 12 bold'), bg='lightblue')
+        self.label_taca = Label(self.frame_3_main, text=' " A TAÇA do mundo é Nossa, \ncom o brasileiro não há quem possa..."\n\n Essa foi uma das canções \nque ecoavam durante as copas \n que se seguiram ao longo dos anos...'.upper(), font=('verdana 12 bold'), bg='lightblue')
         self.label_taca.place(relx=0.01, rely=0.64, relwidth=0.98, relheight=0.35)
         
     # TAÇA
@@ -86,11 +83,10 @@ class Application(Imagens,Listas):
         self.bt_taca_dividida= ImageTk.PhotoImage(self.bt_taca_dividida)
 
         self.botao_ano = Button(self.frame_3_main,
-                            image=self.bt_taca_dividida,text='taças'.upper(),font=('verdana 10 bold'),
+                            image=self.bt_taca_dividida,font=('verdana 10 bold'),
                             width=900,compound=TOP,relief=RAISED,anchor=NW)
         self.botao_ano.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.62)
    
-
     # 1930 - URUGUAI
         self.uruguai_30 = base64.b64decode(self.uruguai_1930)
         self.bt_1930 = PIL.Image.open(io.BytesIO(self.uruguai_30))
@@ -101,7 +97,6 @@ class Application(Imagens,Listas):
                                     text=' 1930'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1930.place(relx=0.02, rely=0.20, relwidth=0.12, relheight=0.15)
-
 
     # 1934 - ITÁLIA
         self.italia_34 = base64.b64decode(self.italia_1934)
@@ -228,7 +223,6 @@ class Application(Imagens,Listas):
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1982.place(relx=0.58, rely=0.37, relwidth=0.12, relheight=0.15)  
         
-        
     # 1986 - MÉXICO
         self.mexico_1986 = base64.b64decode(self.mexico_1986)
         self.bt_1986 = PIL.Image.open(io.BytesIO(self.mexico_1986))
@@ -239,7 +233,6 @@ class Application(Imagens,Listas):
                                     text=' 1986'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1986.place(relx=0.72, rely=0.37, relwidth=0.12, relheight=0.15)  
-        
         
     # 1990 - ITÁLIA
         self.italia_1990 = base64.b64decode(self.italia_1990)
@@ -252,7 +245,6 @@ class Application(Imagens,Listas):
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1990.place(relx=0.86, rely=0.37, relwidth=0.12, relheight=0.15) 
         
-        
     # 1994 - ESTADOS UNIDOS
         self.usa_1994 = base64.b64decode(self.usa_1994)
         self.bt_1994 = PIL.Image.open(io.BytesIO(self.usa_1994))
@@ -263,7 +255,6 @@ class Application(Imagens,Listas):
                                     text=' 1994'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1994.place(relx=0.02, rely=0.54, relwidth=0.12, relheight=0.15) 
-        
         
     # 1998 - FRANÇA
         self.franca_1998 = base64.b64decode(self.franca_1998)
@@ -276,7 +267,6 @@ class Application(Imagens,Listas):
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img1998.place(relx=0.16, rely=0.54, relwidth=0.12, relheight=0.15) 
 
-
     # 2002 - COREIA - JAPÃO
         self.coreia_japao_2002 = base64.b64decode(self.coreia_japao_2002)
         self.bt_2002 = PIL.Image.open(io.BytesIO(self.coreia_japao_2002))
@@ -288,7 +278,6 @@ class Application(Imagens,Listas):
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img2002.place(relx=0.30, rely=0.54, relwidth=0.12, relheight=0.15) 
         
-        
     # 2006 - ALEMANHA
         self.alemanha_2006 = base64.b64decode(self.alemanha_2006)
         self.bt_2006 = PIL.Image.open(io.BytesIO(self.alemanha_2006))
@@ -299,7 +288,6 @@ class Application(Imagens,Listas):
                                     text=' 2006'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img2006.place(relx=0.44, rely=0.54, relwidth=0.12, relheight=0.15) 
-        
         
     # 2010 - AFRICA DO SUL
         self.africa_sul_2010 = base64.b64decode(self.africa_sul_2010)
@@ -323,7 +311,6 @@ class Application(Imagens,Listas):
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=NW)
         self.botao_img2014.place(relx=0.72, rely=0.54, relwidth=0.12, relheight=0.15) 
         
-    
     # 2018 - RUSSIA
         self.russia_2018 = base64.b64decode(self.russia_2018)
         self.bt_2018 = PIL.Image.open(io.BytesIO(self.russia_2018))
