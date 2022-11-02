@@ -47,7 +47,7 @@ class Application(Imagens,Listas,Janela_1930):
 
         self.label_titulo = Label(self.frame_1_main, image=self.lb_titulo,
                                   text='copa do mundo'.upper(), width=900,
-                                  compound=CENTER, relief=RAISED, anchor=NW,
+                                  compound=CENTER, relief=RAISED, anchor=CENTER,
                                   font=('verdana 70 bold'), fg='#cfd5e1')
         self.label_titulo.place(relx=0, rely=0, relwidth=1, relheight=1)
 
@@ -66,7 +66,7 @@ class Application(Imagens,Listas,Janela_1930):
 
         self.botao_ano = Button(self.frame_3_main,
                             image=self.bt_taca_dividida,font=('verdana 10 bold'),
-                            width=900,compound=TOP,relief=RAISED,anchor=NW)
+                            width=900,compound=TOP,relief=RAISED,anchor=CENTER)
         self.botao_ano.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.62)
    
     # 1930 - URUGUAI

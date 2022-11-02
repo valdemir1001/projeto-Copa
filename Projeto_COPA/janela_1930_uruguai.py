@@ -70,7 +70,7 @@ class Janela_1930():
         
     
         self.gp_A = Button(self.frame_2_1930,text='Grupo A\n\nArgentina\nChile\nFrança\nMéxico',
-                              font=('verdana 12 bold'),bg='lightblue')
+                              font=('verdana 12 bold'),bg='lightblue',width=900,compound=TOP,relief=RAISED,anchor=NW)
         self.gp_A.place(relx=0.02,rely=0.05,relwidth=0.08,relheight=0.15)
 
 Janela_1930()
