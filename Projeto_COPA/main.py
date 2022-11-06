@@ -11,6 +11,7 @@ from tkinter import *
 from img_B64 import *
 from buscas import *
 from janela_1930_uruguai import *
+import customtkinter
 
 root = Tk()
 
@@ -30,13 +31,28 @@ class Application(Imagens,Listas,Janela_1930):
         self.root.geometry('1200x1000+10+10')
 
     def frames_main(self):
-        self.frame_1_main = Frame(self.root)
+        self.frame_1_main = customtkinter.CTkFrame(master=self.root,
+                                    border_width=2,
+                                    corner_radius=5,
+                                    border_color= "black",
+                                    bg_color="white",
+                                    fg_color= "green")
         self.frame_1_main.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.20)
         
-        self.frame_2_main = Frame(self.root,bg='lightgreen')
+        self.frame_2_main = customtkinter.CTkFrame(self.root,      
+                                    border_width=2,
+                                    corner_radius=20,
+                                    border_color= "black",
+                                    bg_color="white",
+                                    fg_color= "lightgreen")
         self.frame_2_main.place(relx=0.01,rely=0.22,relwidth=0.57,relheight=0.77)
 
-        self.frame_3_main = Frame(self.root,bg='green')
+        self.frame_3_main = customtkinter.CTkFrame(self.root,
+                                    border_width=2,
+                                    corner_radius=20,
+                                    border_color= "black",
+                                    bg_color="white",
+                                    fg_color= "lightgreen")
         self.frame_3_main.place(relx=0.59,rely=0.22,relwidth=0.40,relheight=0.77)
 
     # Imagem da Label do Título
@@ -45,40 +61,81 @@ class Application(Imagens,Listas,Janela_1930):
         self.lb_titulo = self.lb_titulo.resize((1200, 200))
         self.lb_titulo = ImageTk.PhotoImage(self.lb_titulo)
 
-        self.label_titulo = Label(self.frame_1_main, image=self.lb_titulo,
-                                  text='copa do mundo'.upper(), width=900,
-                                  compound=CENTER, relief=RAISED, anchor=CENTER,
-                                  font=('verdana 70 bold'), fg='#cfd5e1')
+        self.label_titulo = customtkinter.CTkLabel(self.frame_1_main, 
+                                  image=self.lb_titulo,
+                                  text='copa do mundo'.upper(), 
+                                  width=900,
+                                  compound=CENTER, 
+                                  relief=RAISED, 
+                                  #anchor=CENTER,
+                                  text_font='verdana 70 bold', 
+                                  fg='#cfd5e1',
+                                  )
         self.label_titulo.place(relx=0, rely=0, relwidth=1, relheight=1)
 
  # Botoes Label e Entry
     def widgats_principal(self):
 
     # LABEL TAÇA
-        self.label_taca = Label(self.frame_3_main, text=' " A TAÇA do mundo é Nossa, \ncom o brasileiro não há quem possa..."\n\n Essa foi uma das canções \nque ecoavam durante as copas \n que se seguiram ao longo dos anos...'.upper(), font=('verdana 12 bold'), bg='lightblue')
+        self.label_taca = customtkinter.CTkLabel(self.frame_3_main, 
+                                text=' " A TAÇA do mundo é Nossa, \ncom o brasileiro não há quem possa..."\n\n Essa foi uma das canções \nque ecoavam durante as copas \n que se seguiram ao longo dos anos...'.upper(), 
+                                text_font=('verdana 12 bold'), 
+                                text_color='black',
+                                bg='lightblue',
+                                fg='black',
+                                corner_radius=20,
+                                fg_color= "lightgreen"
+                                )
+                                
         self.label_taca.place(relx=0.01, rely=0.64, relwidth=0.98, relheight=0.35)
         
     # TAÇA
         self.taca= base64.b64decode(self.taca_dividida)
         self.bt_taca_dividida = PIL.Image.open(io.BytesIO(self.taca))
-        self.bt_taca_dividida = self.bt_taca_dividida.resize((450, 450))
+        self.bt_taca_dividida = self.bt_taca_dividida.resize((450, 410))
         self.bt_taca_dividida= ImageTk.PhotoImage(self.bt_taca_dividida)
 
-        self.botao_ano = Button(self.frame_3_main,
-                            image=self.bt_taca_dividida,font=('verdana 10 bold'),
-                            width=900,compound=TOP,relief=RAISED,anchor=CENTER)
-        self.botao_ano.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.62)
+        self.botao_taca =customtkinter.CTkButton(self.frame_3_main,
+                            image=self.bt_taca_dividida,
+                            text_font=('verdana 10 bold'),
+                            width=900,
+                            compound=TOP,
+                            relief=RAISED,
+                            #anchor=CENTER,
+                            hover= True,
+                            hover_color= "lightgreen",
+
+                            corner_radius=20,
+                            text_color='white',
+                            fg_color= "white"
+                            )
+        self.botao_taca.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.62)
    
     # 1930 - URUGUAI
         self.uruguai_30 = base64.b64decode(self.uruguai_1930)
         self.bt_1930 = PIL.Image.open(io.BytesIO(self.uruguai_30))
-        self.bt_1930 = self.bt_1930.resize((72, 89))
+        self.bt_1930 = self.bt_1930.resize((72, 88))
         self.bt_1930 = ImageTk.PhotoImage(self.bt_1930)
 
-        self.botao_img1930 = Button(self.frame_2_main, image=self.bt_1930,command=self.janela_1930,
-                                    text='Copa de 1930\nuruguai'.upper(), font=('verdana 10 bold'),
-                                    width=900, compound=BOTTOM, relief=RAISED, anchor=CENTER)
-        self.botao_img1930.place(relx=0.02, rely=0.02, relwidth=0.16, relheight=0.17)
+        self.botao_img1930 = customtkinter.CTkButton(
+                                    self.frame_2_main,  
+                                    image=self.bt_1930,
+                                    command=self.janela_1930,
+                                    text='Copa de 1930\nuruguai'.upper(), 
+                                    text_font=('Arial 10 bold'),
+                                    width=900, 
+                                    compound=BOTTOM, 
+                                    relief=RAISED, 
+                                    #anchor=CENTER,
+                                    text_color="black",
+                                    hover= True,
+                                    hover_color= "lightgreen",
+                                    border_width=2,
+                                    corner_radius=8,
+                                    border_color= "green",
+                                    fg_color= "white"
+                                    )
+        self.botao_img1930.place(relx=0.02, rely=0.02, relwidth=0.17, relheight=0.19)
           
     # 1934 - ITÁLIA
         self.italia_34 = base64.b64decode(self.italia_1934)
@@ -133,7 +190,7 @@ class Application(Imagens,Listas,Janela_1930):
         self.botao_img1958 = Button(self.frame_2_main, image=self.bt_1958,
                                     text='Copa de1958\nSuécia'.upper(), font=('verdana 10 bold'),
                                     width=900, compound=BOTTOM, relief=RAISED, anchor=CENTER)
-        self.botao_img1958.place(relx=0.02, rely=0.20, relwidth=0.16, relheight=0.17)
+        #self.botao_img1958.place(relx=0.02, rely=0.20, relwidth=0.16, relheight=0.17)
 
     # 1962 - CHILE
         self.chile_62 = base64.b64decode(self.chile_1962)
