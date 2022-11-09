@@ -59,7 +59,7 @@ class Application(Imagens,Listas,Janela_1930):
     # Imagem da Label do Título
         self.stadio = base64.b64decode(self.stadio_B64)
         self.lb_titulo = PIL.Image.open(io.BytesIO(self.stadio))
-        self.lb_titulo = self.lb_titulo.resize((1500, 200))
+        self.lb_titulo = self.lb_titulo.resize((1900, 200))
         self.lb_titulo = ImageTk.PhotoImage(self.lb_titulo)
 
         self.label_titulo = customtkinter.CTkLabel(self.frame_1_main, 
