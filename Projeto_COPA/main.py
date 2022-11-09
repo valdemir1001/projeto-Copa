@@ -135,7 +135,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1930.place(relx=0.02, rely=0.02, relwidth=0.12, relheight=0.23)
@@ -159,7 +159,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
                                     
@@ -184,7 +184,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1938.place(relx=0.30, rely=0.02, relwidth=0.12, relheight=0.23)
@@ -208,7 +208,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1950.place(relx=0.44, rely=0.02, relwidth=0.12, relheight=0.23)
@@ -232,7 +232,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1954.place(relx=0.58, rely=0.02, relwidth=0.12, relheight=0.23)
@@ -256,7 +256,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1958.place(relx=0.72, rely=0.02, relwidth=0.12, relheight=0.23)
@@ -280,7 +280,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1962.place(relx=0.86, rely=0.02, relwidth=0.12, relheight=0.23)
@@ -304,7 +304,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1966.place(relx=0.02, rely=0.26, relwidth=0.12, relheight=0.23)
@@ -329,7 +329,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1970.place(relx=0.16, rely=0.26, relwidth=0.12, relheight=0.23)
@@ -354,7 +354,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1970.place(relx=0.30, rely=0.26, relwidth=0.12, relheight=0.23)
@@ -379,7 +379,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1970.place(relx=0.44, rely=0.26, relwidth=0.12, relheight=0.23)   
@@ -404,7 +404,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1982.place(relx=0.58, rely=0.26, relwidth=0.12, relheight=0.23)  
@@ -428,7 +428,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1986.place(relx=0.72, rely=0.26, relwidth=0.12, relheight=0.23)  
@@ -452,7 +452,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1990.place(relx=0.86, rely=0.26, relwidth=0.12, relheight=0.23) 
@@ -476,7 +476,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1994.place(relx=0.02, rely=0.50, relwidth=0.12, relheight=0.23) 
@@ -500,7 +500,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img1998.place(relx=0.16, rely=0.50, relwidth=0.12, relheight=0.23) 
@@ -524,7 +524,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img2002.place(relx=0.30, rely=0.50, relwidth=0.12, relheight=0.23) 
@@ -548,7 +548,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img2006.place(relx=0.44, rely=0.50, relwidth=0.12, relheight=0.23) 
@@ -572,7 +572,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img2010.place(relx=0.58, rely=0.50, relwidth=0.12, relheight=0.23) 
@@ -596,7 +596,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img2014.place(relx=0.72, rely=0.50, relwidth=0.12, relheight=0.23) 
@@ -620,7 +620,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img2018.place(relx=0.86, rely=0.50, relwidth=0.12, relheight=0.23)
@@ -644,7 +644,7 @@ class Application(Imagens,Listas,Janela_1930):
                                     hover_color= "#09c184",
                                     border_width=2,
                                     corner_radius=8,
-                                    border_color= "white",
+                                    border_color= "#f8ca00",
                                     fg_color= "#0c5149"
                                     )
         self.botao_img2022.place(relx=0.02, rely=0.74, relwidth=0.12, relheight=0.23)
