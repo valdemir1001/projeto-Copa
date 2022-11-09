@@ -16,7 +16,7 @@ class Janela_1930():
         self.root_1930 = Toplevel()
         self.root_1930.title('1930 - Uruguai')
         self.root_1930.configure(background='lightblue')
-        self.root_1930.geometry('1200x1000+100+10')
+        self.root_1930.geometry('1200x1000+10+10')
         self.root_1930.resizable(False,False)
         self.root_1930.transient(self.root)
         self.root_1930.focus_force()
