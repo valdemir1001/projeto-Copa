@@ -39,7 +39,7 @@ class Janela_1930():
         # Imagem da Label do Título
         self.selo = base64.b64decode(self.selo_uruguai_1930)
         self.lb_selo = PIL.Image.open(io.BytesIO(self.selo))
-        self.lb_selo = self.lb_selo.resize((1900, 200))
+        self.lb_selo = self.lb_selo.resize((1500, 200))
         self.lb_selo = ImageTk.PhotoImage(self.lb_selo)
 
         self.label_selo = customtkinter.CTkLabel(self.frame_1_1930, 
@@ -54,29 +54,132 @@ class Janela_1930():
         self.label_selo.place(relx=0, rely=0, relwidth=1, relheight=1)
         
     def widget_1930(self):
-        """self.label_pesquisa = Label(self.frame_2_1930, text='    pesquise aqui pelo ano e país'.upper(), font=('verdana 12 bold'), bg='lightblue')
-        self.label_pesquisa.place(relx=0.01, rely=0.02, relwidth=0.50, relheight=0.03)
-
-        self.label_ano = Label(self.frame_2_1930,text='ano'.upper(),font=('verdana 12 bold'),bg='lightblue')
-        self.label_ano.place(relx=0.01,rely=0.08,relwidth=0.10,relheight=0.03)
-
-        self.entry_ano = ttk.Combobox(self.frame_2_1930,font=('verdana 12 bold'),values=self.ano_pais)
-        self.entry_ano.set('Busque Aqui')
-        self.entry_ano.place(relx=0.15,rely=0.08,relwidth=0.40,relheight=0.03)
-
-        self.bola = base64.b64decode(self.bola_pais_B64)
-        self.bt_bola_pais = PIL.Image.open(io.BytesIO(self.bola))
-        self.bt_bola_pais = self.bt_bola_pais.resize((45, 45))
-        self.bt_bola_pais = ImageTk.PhotoImage(self.bt_bola_pais)
-
-        self.botao_ano = Button(self.frame_2_1930,
-                            image=self.bt_bola_pais,text='pesquisar'.upper(),font=('verdana 10 bold'),
-                            width=900,compound=TOP,relief=RAISED,anchor=NW)
-        self.botao_ano.place(relx=0.60,rely=0.02,relwidth=0.14,relheight=0.10)"""
         
+    # Label Grupos
+        self.label_grupos = customtkinter.CTkLabel(self.frame_2_1930, 
+                                text='grupos'.upper(), 
+                                width=900,
+                                compound=CENTER, 
+                                relief=RAISED, 
+                                #anchor=NW,
+                                text_font=('verdana 16 bold'), 
+                                fg='black')
+        self.label_grupos.place(relx=0, rely=0.05, relwidth=0.10, relheight=0.05)
+       
+    # Botão Grupo A       
+        self.gp_A = customtkinter.CTkButton(self.frame_2_1930,
+                            text_font=('Arial 30 bold'),
+                            text='A',
+                            width=900,
+                            compound=CENTER,
+                            relief=RAISED,
+                            #anchor=CENTER,
+                            hover= True,
+                            hover_color= "lightgray",
+                            border_width=2,
+                            corner_radius=10,
+                            text_color='black',
+                            border_color= "red",
+                            fg_color= "white"
+                            )
+        self.gp_A.place(relx=0.02,rely=0.10,relwidth=0.05,relheight=0.09)
+        
+    # Bandeira Argentina
+        self.band_argentina_30 = base64.b64decode(self.bandeira_argentina)
+        self.band_argentina_1930 = PIL.Image.open(io.BytesIO(self.band_argentina_30))
+        self.band_argentina_1930 = self.band_argentina_1930.resize((50,30))
+        self.band_argentina_1930 = ImageTk.PhotoImage(self.band_argentina_1930)
+
+        self.botao_band_argentina_1930 = customtkinter.CTkButton(
+                                    self.frame_2_1930,  
+                                    image=self.band_argentina_1930,
+                                    
+                                    text='argentina'.upper(), 
+                                    text_font=('Arial 7 bold'),
+                                    width=900, 
+                                    compound=BOTTOM, 
+                                    relief=RAISED, 
+                                    text_color="white",
+                                    hover= True,
+                                    hover_color= "#09c184",
+                                    border_width=2,
+                                    corner_radius=8,
+                                    border_color= "red",
+                                    fg_color= "#0c5149"
+                                    )
+        self.botao_band_argentina_1930.place(relx=0.08, rely=0.10, relwidth=0.05, relheight=0.09)
     
-        self.gp_A = Button(self.frame_2_1930,text='Grupo A\n\nArgentina\nChile\nFrança\nMéxico',
-                              font=('verdana 12 bold'),bg='lightblue',width=900,compound=TOP,relief=RAISED,anchor=NW)
-        self.gp_A.place(relx=0.02,rely=0.05,relwidth=0.08,relheight=0.15)
+        
+    # Botão Grupo B       
+        self.gp_B = customtkinter.CTkButton(self.frame_2_1930,
+                            text_font=('Arial 30 bold'),
+                            text='B',
+                            width=900,
+                            compound=CENTER,
+                            relief=RAISED,
+                            #anchor=CENTER,
+                            hover= True,
+                            hover_color= "lightgray",
+                            border_width=2,
+                            corner_radius=10,
+                            text_color='black',
+                            border_color= "blue",
+                            fg_color= "white"
+                            )
+        self.gp_B.place(relx=0.02,rely=0.20,relwidth=0.05,relheight=0.09)
+        
+    # Botão Grupo C       
+        self.gp_C = customtkinter.CTkButton(self.frame_2_1930,
+                            text_font=('Arial 30 bold'),
+                            text='C',
+                            width=900,
+                            compound=CENTER,
+                            relief=RAISED,
+                            #anchor=CENTER,
+                            hover= True,
+                            hover_color= "lightgray",
+                            border_width=2,
+                            corner_radius=10,
+                            text_color='black',
+                            border_color= "green",
+                            fg_color= "white"
+                            )
+        self.gp_C.place(relx=0.02,rely=0.30,relwidth=0.05,relheight=0.09)
+        
+    # Botão Grupo D       
+        self.gp_D = customtkinter.CTkButton(self.frame_2_1930,
+                            text_font=('Arial 30 bold'),
+                            text='D',
+                            width=900,
+                            compound=CENTER,
+                            relief=RAISED,
+                            #anchor=CENTER,
+                            hover= True,
+                            hover_color= "lightgray",
+                            border_width=2,
+                            corner_radius=10,
+                            text_color='black',
+                            border_color= "black",
+                            fg_color= "white"
+                            )
+        self.gp_D.place(relx=0.02,rely=0.40,relwidth=0.05,relheight=0.09)
+        
+    # Botão Grupo FINAL      
+        self.gp_final = customtkinter.CTkButton(self.frame_2_1930,
+                            text_font=('Arial 20 bold'),
+                            text='FINAL',
+                            width=900,
+                            compound=CENTER,
+                            relief=RAISED,
+                            #anchor=CENTER,
+                            hover= True,
+                            hover_color= "lightgray",
+                            border_width=2,
+                            corner_radius=10,
+                            text_color='black',
+                            border_color= "green",
+                            fg_color= "white"
+                            )
+        self.gp_final.place(relx=0.30,rely=0.19,relwidth=0.08,relheight=0.07)
 
 Janela_1930()
