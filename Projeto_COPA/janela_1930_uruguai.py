@@ -7,7 +7,7 @@ import PIL
 from PIL import Image,ImageTk
 import io
 from img_B64 import *
-
+import customtkinter
 
 class Janela_1930():
          
@@ -16,8 +16,9 @@ class Janela_1930():
         self.root_1930 = Toplevel()
         self.root_1930.title('1930 - Uruguai')
         self.root_1930.configure(background='lightblue')
-        self.root_1930.geometry('1200x1000+10+10')
-        self.root_1930.resizable(False,False)
+        self.root_1930.geometry('1500x1000+10+10')
+        self.root_1930.attributes('-fullscreen')
+        self.root_1930.resizable(True,True)
         self.root_1930.transient(self.root)
         self.root_1930.focus_force()
         self.root_1930.grab_set()
@@ -38,13 +39,18 @@ class Janela_1930():
         # Imagem da Label do Título
         self.selo = base64.b64decode(self.selo_uruguai_1930)
         self.lb_selo = PIL.Image.open(io.BytesIO(self.selo))
-        self.lb_selo = self.lb_selo.resize((1200, 200))
+        self.lb_selo = self.lb_selo.resize((1900, 200))
         self.lb_selo = ImageTk.PhotoImage(self.lb_selo)
 
-        self.label_selo = Label(self.frame_1_1930, image=self.lb_selo,
-                                  text='uruguai 1930'.upper(), width=900,
-                                  compound=CENTER, relief=RAISED, anchor=NW,
-                                  font=('verdana 70 bold'), fg='black')
+        self.label_selo = customtkinter.CTkLabel(self.frame_1_1930, 
+                                image=self.lb_selo,
+                                text='uruguai 1930'.upper(), 
+                                width=900,
+                                compound=CENTER, 
+                                relief=RAISED, 
+                                #anchor=NW,
+                                text_font=('verdana 70 bold'), 
+                                fg='black')
         self.label_selo.place(relx=0, rely=0, relwidth=1, relheight=1)
         
     def widget_1930(self):

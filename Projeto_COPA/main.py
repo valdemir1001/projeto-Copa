@@ -91,16 +91,16 @@ class Application(Imagens,Listas,Janela_1930):
                                 
         self.label_taca.place(relx=0.01, rely=0.68, relwidth=0.98, relheight=0.30)
         
-    # TAÇA
-        self.taca= base64.b64decode(self.taca_dividida)
+    # TROFEU JULES RIMET
+        self.taca= base64.b64decode(self.taca_jules_rimet)
         self.bt_taca_dividida = PIL.Image.open(io.BytesIO(self.taca))
-        self.bt_taca_dividida = self.bt_taca_dividida.resize((260, 310))
+        self.bt_taca_dividida = self.bt_taca_dividida.resize((200, 450))
         self.bt_taca_dividida= ImageTk.PhotoImage(self.bt_taca_dividida)
 
         self.botao_taca =customtkinter.CTkButton(self.frame_3_main,
                             image=self.bt_taca_dividida,
                             text_font=('Arial 10 bold'),
-                            text='Taça Jules Rimet, de 1930 a 1970\n e o Troféu da Copa do Mundo, de 1974 até os dias atuais',
+                            text='Trofeu Jules Rimet\nde 1930 a 1970',
                             width=900,
                             compound=TOP,
                             relief=RAISED,
@@ -113,7 +113,31 @@ class Application(Imagens,Listas,Janela_1930):
                             
                             fg_color= "white"
                             )
-        self.botao_taca.place(relx=0.01,rely=0.01,relwidth=0.98,relheight=0.65)
+        self.botao_taca.place(relx=0.01,rely=0.01,relwidth=0.47,relheight=0.65)
+        
+    # TAÇA FIFA
+        self.taca= base64.b64decode(self.taca_fifa)
+        self.bt_taca_dividida = PIL.Image.open(io.BytesIO(self.taca))
+        self.bt_taca_dividida = self.bt_taca_dividida.resize((430, 400))
+        self.bt_taca_dividida= ImageTk.PhotoImage(self.bt_taca_dividida)
+
+        self.botao_taca =customtkinter.CTkButton(self.frame_3_main,
+                            image=self.bt_taca_dividida,
+                            text_font=('Arial 10 bold'),
+                            text='Troféu da Copa do Mundo\nde 1974 até os dias atuais',
+                            width=900,
+                            compound=TOP,
+                            relief=RAISED,
+                            #anchor=CENTER,
+                            hover= True,
+                            hover_color= "lightgreen",
+
+                            corner_radius=20,
+                            text_color='black',
+                            
+                            fg_color= "white"
+                            )
+        self.botao_taca.place(relx=0.52,rely=0.01,relwidth=0.47,relheight=0.65)
    
     # 1930 - URUGUAI
         self.uruguai_30 = base64.b64decode(self.uruguai_1930)
