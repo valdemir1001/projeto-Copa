@@ -84,7 +84,7 @@ class Janela_1930():
                             )
         self.gp_A.place(relx=0.02,rely=0.10,relwidth=0.05,relheight=0.09)
         
-    # Bandeira Argentina
+    # Bandeira Argentina primeira do Grupo A
         self.band_argentina_30 = base64.b64decode(self.bandeira_argentina)
         self.band_argentina_1930 = PIL.Image.open(io.BytesIO(self.band_argentina_30))
         self.band_argentina_1930 = self.band_argentina_1930.resize((50,30))
@@ -108,7 +108,29 @@ class Janela_1930():
                                     fg_color= "#0c5149"
                                     )
         self.botao_band_argentina_1930.place(relx=0.08, rely=0.10, relwidth=0.05, relheight=0.09)
-    
+        
+        # Imagem da Label do Título
+        self.stadio_1930 = base64.b64decode(self.campo)
+        self.lb_titulo_1930 = PIL.Image.open(io.BytesIO(self.stadio_1930))
+        self.lb_titulo_1930 = self.lb_titulo_1930.resize((480, 250))
+        self.lb_titulo_1930 = ImageTk.PhotoImage(self.lb_titulo_1930)
+        
+        self.label_placar = customtkinter.CTkLabel(self.frame_2_1930, 
+                                  image=self.lb_titulo_1930,
+                                  text='semifinais\n argentina | 6 x 1 | u.s.a\n\niuguslavia | 1 x 6 | uruguai \n\nfinal\n  argentina | 2 x 4 | uruguai'.upper(), 
+                                  width=900,
+                                  compound=CENTER, 
+                                  relief=RAISED, 
+                                  #anchor=CENTER,
+                                  text_font='arial 17 bold', 
+                                  fg='#cfd5e1',
+                                  text_color='black',
+                                  corner_radius=2,
+                                  
+                                  fg_color= "lightgray"
+                                  
+                                  )
+        self.label_placar.place(relx=0.15, rely=0.15, relwidth=0.32, relheight=0.30)
         
     # Botão Grupo B       
         self.gp_B = customtkinter.CTkButton(self.frame_2_1930,
@@ -128,6 +150,34 @@ class Janela_1930():
                             )
         self.gp_B.place(relx=0.02,rely=0.20,relwidth=0.05,relheight=0.09)
         
+        
+    # Bandeira da Iuguslavia primeira do grupo B
+        self.band_iuguslavia_30 = base64.b64decode(self.bandeira_iuguslavia)
+        self.band_iuguslavia_1930 = PIL.Image.open(io.BytesIO(self.band_iuguslavia_30))
+        self.band_iuguslavia_1930 = self.band_iuguslavia_1930.resize((50,30))
+        self.band_iuguslavia_1930 = ImageTk.PhotoImage(self.band_iuguslavia_1930)
+
+        self.botao_band_iuguslavia_1930 = customtkinter.CTkButton(
+                                    self.frame_2_1930,  
+                                    image=self.band_iuguslavia_1930,
+                                    
+                                    text='iuguslavia'.upper(), 
+                                    text_font=('Arial 7 bold'),
+                                    width=900, 
+                                    compound=BOTTOM, 
+                                    relief=RAISED, 
+                                    text_color="white",
+                                    hover= True,
+                                    hover_color= "#09c184",
+                                    border_width=2,
+                                    corner_radius=8,
+                                    border_color= "blue",
+                                    fg_color= "#0c5149"
+                                    )
+        self.botao_band_iuguslavia_1930.place(relx=0.08, rely=0.20, relwidth=0.05, relheight=0.09)
+        
+ 
+        
     # Botão Grupo C       
         self.gp_C = customtkinter.CTkButton(self.frame_2_1930,
                             text_font=('Arial 30 bold'),
@@ -145,6 +195,33 @@ class Janela_1930():
                             fg_color= "white"
                             )
         self.gp_C.place(relx=0.02,rely=0.30,relwidth=0.05,relheight=0.09)
+        
+        
+    # Bandeira da Uruguai primeira do grupo C
+        self.band_uruguai_30 = base64.b64decode(self.bandeira_uruguai)
+        self.band_uruguai_1930 = PIL.Image.open(io.BytesIO(self.band_uruguai_30))
+        self.band_uruguai_1930 = self.band_uruguai_1930.resize((50,30))
+        self.band_uruguai_1930 = ImageTk.PhotoImage(self.band_uruguai_1930)
+
+        self.botao_band_uruguai_1930 = customtkinter.CTkButton(
+                                    self.frame_2_1930,  
+                                    image=self.band_uruguai_1930,
+                                    
+                                    text='uruguai'.upper(), 
+                                    text_font=('Arial 7 bold'),
+                                    width=900, 
+                                    compound=BOTTOM, 
+                                    relief=RAISED, 
+                                    text_color="white",
+                                    hover= True,
+                                    hover_color= "#09c184",
+                                    border_width=2,
+                                    corner_radius=8,
+                                    border_color= "green",
+                                    fg_color= "#0c5149"
+                                    )
+        self.botao_band_uruguai_1930.place(relx=0.08, rely=0.30, relwidth=0.05, relheight=0.09)
+        
         
     # Botão Grupo D       
         self.gp_D = customtkinter.CTkButton(self.frame_2_1930,
@@ -164,6 +241,32 @@ class Janela_1930():
                             )
         self.gp_D.place(relx=0.02,rely=0.40,relwidth=0.05,relheight=0.09)
         
+        
+    # Bandeira da USA primeira do grupo D
+        self.band_usa_30 = base64.b64decode(self.bandeira_usa)
+        self.band_usa_1930 = PIL.Image.open(io.BytesIO(self.band_usa_30))
+        self.band_usa_1930 = self.band_usa_1930.resize((50,30))
+        self.band_usa_1930 = ImageTk.PhotoImage(self.band_usa_1930)
+
+        self.botao_band_usa_1930 = customtkinter.CTkButton(
+                                    self.frame_2_1930,  
+                                    image=self.band_usa_1930,
+                                    
+                                    text='u.s.a'.upper(), 
+                                    text_font=('Arial 7 bold'),
+                                    width=900, 
+                                    compound=BOTTOM, 
+                                    relief=RAISED, 
+                                    text_color="white",
+                                    hover= True,
+                                    hover_color= "#09c184",
+                                    border_width=2,
+                                    corner_radius=8,
+                                    border_color= "black",
+                                    fg_color= "#0c5149"
+                                    )
+        self.botao_band_usa_1930.place(relx=0.08, rely=0.40, relwidth=0.05, relheight=0.09)
+        
     # Botão Grupo FINAL      
         self.gp_final = customtkinter.CTkButton(self.frame_2_1930,
                             text_font=('Arial 20 bold'),
@@ -180,6 +283,6 @@ class Janela_1930():
                             border_color= "green",
                             fg_color= "white"
                             )
-        self.gp_final.place(relx=0.30,rely=0.19,relwidth=0.08,relheight=0.07)
+        self.gp_final.place(relx=0.80,rely=0.19,relwidth=0.08,relheight=0.07)
 
 Janela_1930()
